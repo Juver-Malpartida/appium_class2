@@ -14,7 +14,7 @@ public class CommonSteps extends ParentScenario {
         startAndroid();
         loginPage.takingSessionActivity();
         System.out.println("I open the app");
-        loginPage.takingSessionActivity();
+        //loginPage.takingSessionActivity();
         System.out.println("The App is loaded successfully");
         System.out.println("I login with recorder credentials");
         loginPage.loginOnApp(username, password);
@@ -22,7 +22,7 @@ public class CommonSteps extends ParentScenario {
 
     @Then("^I'm on my profile page$")
     public void i_m_on_my_profile_page() {
-        newsPage.clickSkipButtom();
+//        newsPage.clickSkipButtom();
         mainProfilePage.loadPageSucessfully();
         System.out.println("Profile Page is loaded sucessfully");
     }

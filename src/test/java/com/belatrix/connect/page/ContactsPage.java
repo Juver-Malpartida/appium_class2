@@ -26,7 +26,7 @@ public class ContactsPage extends ParentPage{
     By TXT_SEARCH_CONTACT = By.
             id("android:id/content");
     By BTN_CLOSE_SEARCH = By.
-            xpath("//android.widget.TextView[@text='PROFILE']");
+            xpath("//android.widget.TextView[@text='Profile']");
 
     /**
      * This a method is for wait to load the Contact Profile Page
