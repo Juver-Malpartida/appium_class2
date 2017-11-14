@@ -17,7 +17,7 @@ public class ContactProfilePage extends ParentPage{
     By CONTAINER_PAGE = By.
             id("com.belatrixsf.connect:id/account_swipe_refresh");
     By BTN_BACK_PAGE = By.
-            xpath("//android.widget.ImageButton[@content-desc=\"Desplazarse hacia arriba\"]");
+            xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]");
     By BTN_KUDOS = By.
             id("com.belatrixsf.connect:id/action_recommend");
     By PROFILE_NAME = By.
