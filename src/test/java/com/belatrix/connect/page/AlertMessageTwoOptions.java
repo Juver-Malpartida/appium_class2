@@ -20,6 +20,7 @@ public class AlertMessageTwoOptions extends ParentPage {
             id("android:id/button1");
     By NO_OPTION = By.
             id("android:id/button2");
+    By LBL_MESSAGE = By.id("android:id/message");
 
     /**
      * This a method is for wait load the message alert
@@ -28,6 +29,13 @@ public class AlertMessageTwoOptions extends ParentPage {
     {
         handlingWaitToElement(CONTEINER_MESSAGE);
         handlingWaitToElement(MESSAGE);
+    }
+
+    public void waitForAlertMessage(String message)
+    {
+        handlingWaitToElement(CONTEINER_MESSAGE);
+        handlingWaitToElement(MESSAGE);
+        handlingWaitElementWithText(LBL_MESSAGE, message);
     }
 
     /**

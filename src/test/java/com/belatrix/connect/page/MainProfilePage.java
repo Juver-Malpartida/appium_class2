@@ -25,6 +25,8 @@ public class MainProfilePage extends ParentPage {
             xpath("//android.widget.TextView[@text='Contacts']");
     By TAB_PROFILE = By.
             xpath("//android.widget.TextView[@text='Profile']");
+    By TAB_EVENTS = By.
+            xpath("//android.widget.TextView[@text='Events']");
 
 
     public String getName()
@@ -77,5 +79,10 @@ public class MainProfilePage extends ParentPage {
     public void clickProfileTab(){
         handlingWaitToElement(TAB_PROFILE);
         click(TAB_PROFILE);
+    }
+
+    public void clickEventsTab() {
+        handlingWaitToElement(TAB_EVENTS);
+        click(TAB_EVENTS);
     }
 }

@@ -21,6 +21,9 @@ public class ParentScenario {
     protected static KudosPage kudosPage;
     protected static SideBarNavigation sideBarNavigation;
     protected static AlertMessageTwoOptions alertMessageTwoOptions;
+    protected static EventsPage eventsPage;
+    protected static EventPage eventPage;
+    protected static AlertConfirmation alertConfirmation;
 
     public void startAndroid(){
         String url = "http://localhost:4723/wd/hub";
@@ -47,6 +50,9 @@ public class ParentScenario {
         kudosPage = new KudosPage(driver);
         sideBarNavigation = new SideBarNavigation(driver);
         alertMessageTwoOptions = new AlertMessageTwoOptions(driver);
+        eventsPage = new EventsPage(driver);
+        eventPage = new EventPage(driver);
+        alertConfirmation = new AlertConfirmation(driver);
     }
 
     protected void closeDriver() {
